@@ -55,8 +55,10 @@
         <button v-on:click="agregarSaldo">Agregar saldo</button>
         <button @click="quitarSaldo(100)" :disabled="desactivar">Quitar saldo</button>
 
-        <footer-banco></footer-banco>
-        <footer-banco></footer-banco>
+        <footer-banco
+            :valor="cantidad"
+            fecha="septiembre 2020"
+        />
 
     </div>
 
